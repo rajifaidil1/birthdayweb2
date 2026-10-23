@@ -9,8 +9,8 @@
  */
 const BIRTHDAY_CONFIG = {
   // Nama yang berulang tahun & pengirim
-  recipientName: "[NAMA YANG BERULANG TAHUN]",
-  senderName: "[NAMA PENGIRIM / SAHABATMU] 🌙",
+  recipientName: "KAIRI",
+  senderName: "SZE 🌙",
   letterDateLabel: "Hari Spesialmu • Edisi Ulang Tahun",
 
   // Subjudul Hero (akan ditampilkan dengan efek ketikan / typewriter)
@@ -43,8 +43,8 @@ const BIRTHDAY_CONFIG = {
     {
       src: "images/foto3.jpg",
       alt: "Foto 3 — Kenangan pertama di scrapbook",
-      caption: "momen terbaik yang selalu berkesan 🌙",
-      note: "Salah satu foto yang selalu seru kalau diingat lagi.",
+      caption: "Senyum Roblox 🌙",
+      note: "Senyumnya manis juga ya diliat-liat, tapi tetap ngeselin",
       sticker: "🌙",
       tilt: "-2.5deg",
       tapeTilt: "3deg"
@@ -52,8 +52,8 @@ const BIRTHDAY_CONFIG = {
     {
       src: "images/foto4.jpg",
       alt: "Foto 4 — Kenangan kedua di scrapbook",
-      caption: "salah satu kenangan favorit kita 🏆",
-      note: "Waktu berjalan cepat, tapi momen ini tetap terasa luar biasa.",
+      caption: "Senyum Natural 🏆",
+      note: "Nah kalau ini senyumnya natural, soalnya aku diem2 motoin ehehe.",
       sticker: "🪐",
       tilt: "2deg",
       tapeTilt: "-4deg"
@@ -61,8 +61,8 @@ const BIRTHDAY_CONFIG = {
     {
       src: "images/foto5.jpg",
       alt: "Foto 5 — Kenangan ketiga di scrapbook",
-      caption: "arsip paling legendaris sejauh ini 🚀",
-      note: "Momen ini layak punya museum sendiri 🌙",
+      caption: "Mirip idol Kpop banget 🚀",
+      note: "Ini gantengg bangettt, aku sampai sekarang masih saltingg 🌙",
       sticker: "💫",
       tilt: "-1.8deg",
       tapeTilt: "2deg"
@@ -917,9 +917,9 @@ function initSurpriseInteractions() {
       count === 0
         ? "Cari 3 tombol bulan sabit kecil bertuliskan '🌙' di sepanjang halaman untuk membuka pesan rahasia!"
         : Array.from(AppState.foundSecrets)
-            .sort()
-            .map((i) => BIRTHDAY_CONFIG.secretMessages[i])
-            .join("\n\n");
+          .sort()
+          .map((i) => BIRTHDAY_CONFIG.secretMessages[i])
+          .join("\n\n");
     openSecretModal(`Koleksi Rahasiamu (${count}/${total})`, msg);
   });
 
